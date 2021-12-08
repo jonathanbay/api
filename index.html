@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Definition API</h1>
+    <div class="definition">
+      <p>API est une abbréviation et signifie Application Programming Interface (ou interface de programmation d’application, en français)</p>
+      <p>Une API facilite l’interaction entre deux applications différentes afin qu’elles puissent communiquer entre elles : elle sert d’intermédiaire. Le client va demander à l’API une information, celle-ci va aller chercher cette information dans la base de données puis la renvoyer au client dans un second temps.</p>
+
+      <img src="./media/API.png" alt="api">
+
+      <p>Les données des API REST peuvent utiliser deux langages : XML et JSON.</p><p>Le JSON stocke les données sous un format de clé-valeur avec comme clé le type de données, suivi de deux points : , suivi de la valeur de la donnée. Les données JSON sont entourées d'accolades { }, et chaque paire clé-valeur est envoyée comme chaîne de caractères avec des guillemets autour "". </p>
+    </div>
+
+      <div class="exemples">
+        <div class="json">
+          <h3>exemple jSON: </h3>
+          <img src="./media/exemple_json.png" alt="json">
+        </div>
+        <div class="xml">
+          <h3>exemple xml</h3>
+          <img src="./media/xml-exemple.jpg" alt="">
+
+        </div>
+      </div>
+
+     <div class="apiChat">
+            <input class="btnChat" type="button" value="nouveau chat" onclick="afficheChats()">
+            <img class="chat" src="" alt="" id="cat" />
+     </div>
+
+    <div class="apiNasa" >
+        <input class="btnNasa" type="button" value="image nasa" onclick="nasa()">
+        <img class="imgNasa" class="nasa" src="" alt="" id="nasa" /><br>
+    </div>
+
+
+     <div class="btn" >
+      <input type="button" value="age robert" onclick="nameR()">
+    </div>
+
+     <p id="age"></p><br>
+
+     <div class="btn" >
+      <input type="button" value="activity" onclick="activity()">
+    </div>
+
+     <p id="bored"></p>
+
+     <div class="blague" id="blague">
+       <h3 id="headerBlague"></h3>
+       <p id="contenuBlague"></p>
+     </div>
+
+
+<script src="app.js"></script>
+  </body>
+</html> 
